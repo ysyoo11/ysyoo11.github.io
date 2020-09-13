@@ -65,6 +65,17 @@ document.addEventListener("scroll", () => {
   }
 });
 
+// Scroll down to Skills when clicking stack icons
+
+const major = document.querySelectorAll(".major");
+const majorIcon = document.querySelector(".major__icon");
+
+major.forEach((majorIcon) => {
+  majorIcon.addEventListener("click", () => {
+    scrollIntoView("#skills");
+  });
+});
+
 // Handle work categories
 
 const workBtnContainer = document.querySelector(".work__categories");
